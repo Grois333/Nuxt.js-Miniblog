@@ -42,7 +42,7 @@ export default {
   },
   asyncData({ params, $http, isDev }) {
     const { slug } = params
-    const url = isDev ? 'http://localhost:9999' : 'https://miniblog-platzi.netlify.app';
+    const url = isDev ? 'http://localhost:9999' : 'https://nuxt-miniblog.netlify.app';
     const article = $http.$get(
       `${url}/.netlify/functions/article?slug=${slug}`
     )
@@ -73,7 +73,7 @@ export default {
       const url =
         location.hostname === 'localhost'
           ? 'http://localhost:9999'
-          : 'https://miniblog-platzi.netlify.app'
+          : 'https://nuxt-miniblog.netlify.app'
       await fetch(
         `${url}/.netlify/functions/comment?article=${this.article._id}`,
         { method: 'post', body: JSON.stringify(comment) }
