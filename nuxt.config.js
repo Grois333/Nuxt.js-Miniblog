@@ -14,7 +14,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Miniblog is my personal blog',
+        content: 'Miniblog es mi blog personal',
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
@@ -41,7 +41,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxt/http'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

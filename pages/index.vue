@@ -6,6 +6,7 @@
         <ArticleCard
           v-for="article in articles"
           :key="article.slug"
+          v-bind="article"
         />
       </main>
     </div>
@@ -14,12 +15,26 @@
 
 <script>
 export default {
-    name: "IndexPage",
-    data() {
-      return {
-        articles: [1,2,3,4]
-      };
-    },
+  name: 'IndexPage',
+  data() {
+    return {
+      articles: [],
+    }
+  },
+  async mounted() {
+    const baseUrl =
+        location.hostname === 'localhost'
+          ? 'http://localhost:9999'
+          : 'https://nuxt-miniblog.netlify.app'
+    const url = `${baseUrl}/.netlify/functions/articles`
+    const { articles } = await this.$http.$get(url)
+    this.articles = articles.map((a) => ({
+      ...a,
+      author: a['author-name'][0],
+      date: new Date(a.updated),
+      cover: a.cover[0]?.thumbnails.large.url,
+    }))
+  },
 }
 </script>
 
