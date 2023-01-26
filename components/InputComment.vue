@@ -1,20 +1,20 @@
 <template>
   <form class="input-comment" @submit.prevent="submit">
-    <legend>Comentar</legend>
-    <label for="name">Nombre</label>
+    <legend>Comment</legend>
+    <label for="name">Name</label>
     <input v-model="name" name="name" type="text" />
-    <label for="email">Correo</label>
+    <label for="email">Email</label>
     <input v-model="email" name="email" type="email" />
-    <label for="content">Comentario</label>
+    <label for="content">Comment</label>
     <textarea
       v-model="content"
       name="content"
       cols="30"
       rows="4"
-      placeholder="Escribe aquí tu comentario"
+      placeholder="Write your comment here"
     >
     </textarea>
-    <button>Comentar</button>
+    <button>Comment</button>
   </form>
 </template>
 

@@ -1,8 +1,7 @@
 <template>
   <div class="about-me">
     <h1>Miniblog</h1>
-    <p>Miniblog es un pequeño sistema de blog personal con NuxtJS, Netlify y
-      Airtable.</p>
+    <p>Miniblog is a small personal blog system with NuxtJS, Netlify and Airtable.</p>
   </div>
 </template>
 

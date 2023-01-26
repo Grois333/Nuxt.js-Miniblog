@@ -4,15 +4,15 @@
       ><h3>{{ title }}</h3></NuxtLink
     >
     <div class="author">
-      <p>Por {{ author }}</p>
-      <small>Fecha de publicación: {{ date }}</small>
+      <p>By {{ author }}</p>
+      <small>Published date: {{ date }}</small>
     </div>
     <figure>
       <img :src="cover" alt="cover" />
     </figure>
     <p>{{ description }}</p>
     <div class="actions">
-      <NuxtLink class="btn" :to="slug">Ir al post</NuxtLink>
+      <NuxtLink class="btn" :to="slug">Go to post</NuxtLink>
     </div>
   </div>
 </template>

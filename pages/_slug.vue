@@ -3,19 +3,19 @@
     <article class="post">
       <h1>{{ post.title }}</h1>
       <div class="author">
-        <p>Por {{ post.author }}</p>
-        <small>Fecha de publicación: {{ post.updated }}</small>
+        <p>By {{ post.author }}</p>
+        <small>Published date: {{ post.updated }}</small>
       </div>
       <p>{{ post.description }}</p>
       <figure>
         <img :src="post.cover" :alt="post.cover" />
-        <figcaption>Portada - {{ post.title }}</figcaption>
+        <figcaption>Front page - {{ post.title }}</figcaption>
       </figure>
       <VueMarkdown class="markdown">{{ post.content }}</VueMarkdown>
       <div ref="comments" class="comments">
-        <h3 class="title">Comentarios</h3>
+        <h3 class="title">Comments</h3>
         <p class="total-comments">
-          Hay {{ article['total-comments'] || 0 }} comentarios
+          there are {{ article['total-comments'] || 0 }} comments
         </p>
         <div class="comments-list">
           <CommentItem
