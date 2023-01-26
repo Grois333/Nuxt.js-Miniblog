@@ -5,6 +5,8 @@
 ## Built with: NuxtJS, Netlify and Airtable
 
 
+![Main](https://raw.githubusercontent.com/Grois333/Nuxt.js-Miniblog/master/site%20images/front%20page.png)
+
 ## Notes:
 
 Installation:
@@ -57,6 +59,10 @@ http://localhost:9999/.netlify/functions/articles
 Static Site Generation:
 npm run generate
 
+
+### Article Page with comments box:
+
+![article](https://raw.githubusercontent.com/Grois333/Nuxt.js-Miniblog/master/site%20images/FireShot%20Capture%20427%20-%20Hello%20World%201%20-%20nuxt-miniblog.netlify.app.png)
 
 
 ## Build Setup
