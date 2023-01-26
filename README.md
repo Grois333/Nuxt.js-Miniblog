@@ -1,5 +1,64 @@
 # Nuxt.js Miniblog
 
+## Site link: https://nuxt-miniblog.netlify.app/
+
+## Built with: NuxtJS, Netlify and Airtable
+
+
+## Notes:
+
+Installation:
+https://nuxtjs.org/docs/get-started/installation/
+
+
+
+No Code DB:
+https://airtable.com/
+
+
+Netlify functions to send the data ordered from airtable
+
+Netlify CLI:
+https://docs.netlify.com/cli/get-started/
+
+
+
+Netlify Commands:
+
+netlify
+
+netlify login
+
+netlify status
+
+netlify init
+
+
+
+Execute netlify Functions:
+netlify functions:serve
+
+npm install airtable
+server: http://localhost:9999/.netlify/functions/base
+
+Fix linter code:
+npm run lintfix
+
+
+Nuxt Modules:
+https://nuxt.com/modules
+
+
+Consume API with:
+npm install @nuxt/http 
+http://localhost:9999/.netlify/functions/articles
+
+
+Static Site Generation:
+npm run generate
+
+
+
 ## Build Setup
 
 ```bash
